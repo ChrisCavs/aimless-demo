@@ -1,22 +1,33 @@
-import { Box, Button, Typography } from "@mui/material";
-import React from "react";
+import { Box, Button } from "@mui/material";
+import React, { useContext } from "react";
+import AimlessPNG from './aimless.png'
+import { DesktopContext } from "./App";
 
 const Header = () => {
+    const isDesktop = useContext(DesktopContext)
+
     return (
         <Box component="header" sx={{
-            position: 'fixed',
             display: 'flex',
-            justifyContent: 'space-between',
+            justifyContent: isDesktop ? 'space-between' : 'center',
             alignItems: 'center',
-            top: 0,
-            left: '50%',
-            transform: 'translateX(-50%)',
-            maxWidth: '900px',
-            width: '900px',
-            marginTop: '20px',
+            maxWidth: '800px',
+            height: '100px',
+            width: '85%',
+            margin: '20px auto 0 auto',
         }}>
-            <Typography variant="h3">Fridge-It</Typography>
-            <Button href="https://github.com/ChrisCavs/fridge-it" target="_blank" variant="outlined">GitHub</Button>
+            <Box sx={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                maxHeight: '100px',
+                maxWidth: '400px',
+                overflow: 'hidden',
+                transform: `translateX(${isDesktop ? '-58px' : '-6px'})`,
+            }}>
+                <img style={{ width: '100%', height: 'auto' }} src={AimlessPNG} alt="aimless.js" />
+            </Box>
+            <Button sx={{ display: isDesktop ? 'block' : 'none'}} href="https://github.com/ChrisCavs/aimless.js" target="_blank" variant="outlined">On GitHub</Button>
         </Box>
     )
 }
