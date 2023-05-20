@@ -4,6 +4,7 @@ import { LinkOff, PsychologyOutlined, ZoomIn } from "@mui/icons-material";
 import { DesktopContext } from "./App";
 import RandomDemo from "./RandomDemo";
 import SpecialGenerators from "./SpecialGenerators";
+import Distributions from "./Distributions";
 
 const Content = () => {
     const isDesktop = useContext(DesktopContext)
@@ -55,7 +56,7 @@ const Content = () => {
             <Divider sx={{ margin: isDesktop ? '40px 0 40px 0' : '28px 0 28px 0' }} />
             <SpecialGenerators />
             <Divider sx={{ margin: isDesktop ? '40px 0 40px 0' : '28px 0 28px 0' }} />
-            <Typography variant="h6" sx={{ fontWeight: 'bold', color: `${theme.palette.primary.main}`, marginBottom: '20px' }}>Distributions</Typography>
+            <Distributions />
             <Divider sx={{ margin: isDesktop ? '40px 0 40px 0' : '28px 0 28px 0' }} />
             <Typography variant="h6" sx={{ fontWeight: 'bold', color: `${theme.palette.primary.main}`, marginBottom: '40px' }}>And More!!!</Typography>
         </Box>
