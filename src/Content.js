@@ -1,19 +1,18 @@
 import React, { useContext } from "react";
-import Aimless from 'aimless.js'
 import { Box, Divider, List, ListItem, ListItemIcon, ListItemText, Typography, useTheme } from "@mui/material";
 import { LinkOff, PsychologyOutlined, ZoomIn } from "@mui/icons-material";
 import { DesktopContext } from "./App";
+import RandomDemo from "./RandomDemo";
 
 const Content = () => {
     const isDesktop = useContext(DesktopContext)
     const theme = useTheme()
-    const aimless = new Aimless()
 
     return (
         <Box sx={{
             width: '85%',
             maxWidth: '800px',
-            margin: '30px auto 0 auto',
+            margin: '20px auto 300px auto',
         }}>
             <Box sx={{
                 display: isDesktop ? 'flex' : 'block',
@@ -50,8 +49,12 @@ const Content = () => {
                     </ListItem>
                 </List>
             </Box>
-            <Divider sx={{ margin: isDesktop ? '40px 0 48px 0' : '20px 0 28px 0' }} />
-            <Typography variant="body1" sx={{ fontWeight: 'bold', color: `${theme.palette.primary.main}` }}>Random Numbers</Typography>
+            <Divider sx={{ margin: isDesktop ? '40px 0 40px 0' : '20px 0 28px 0' }} />
+            <RandomDemo />
+            <Divider sx={{ margin: isDesktop ? '40px 0 40px 0' : '20px 0 20px 0' }} />
+            <Typography variant="h6" sx={{ fontWeight: 'bold', color: `${theme.palette.primary.main}`, marginBottom: '20px' }}>Special Generators</Typography>
+            <Divider sx={{ margin: isDesktop ? '40px 0 40px 0' : '20px 0 20px 0' }} />
+            <Typography variant="h6" sx={{ fontWeight: 'bold', color: `${theme.palette.primary.main}`, marginBottom: '20px' }}>Distributions</Typography>
         </Box>
     )
 }
