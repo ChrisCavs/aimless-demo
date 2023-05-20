@@ -8,7 +8,6 @@ const Footer = () => {
     const theme = useTheme()
     return (
         <>
-            <Divider sx={{ display: isDesktop ? 'block' : 'none', width: '85%', maxWidth: '800px', margin: '0 auto' }} />
             <Box sx={{
                 position: isDesktop ? 'static' : 'fixed',
                 display: 'flex',
@@ -16,7 +15,7 @@ const Footer = () => {
                 bottom: 0,
                 left: 0,
                 width: '100%',
-                height: '100px',
+                height: isDesktop ? '120px' : '100px',
                 margin: '0 auto',
                 backgroundColor: theme.palette.primary.main
             }}>
