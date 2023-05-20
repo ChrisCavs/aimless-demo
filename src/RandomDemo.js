@@ -4,7 +4,6 @@ import { Box, Button, Typography } from "@mui/material";
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import { DesktopContext } from "./App";
-import { SubdirectoryArrowRight } from "@mui/icons-material";
 import { useTheme } from "@emotion/react";
 
 const aimless = new Aimless()
@@ -15,8 +14,8 @@ const generateRandom = () => {
         oneOf: aimless.oneOf([1,2,3]),
         intRange: aimless.intRange(0, 10),
         intSequence: aimless.intSequence(0, 2),
-        weighted: aimless.weighted([1,2], [1,5]),
         char: aimless.char('awesome-sauce'),
+        weighted: aimless.weighted([1,2], [1,5]),
     }
 }
 
@@ -29,8 +28,8 @@ const RandomDemo = () => {
     const str2 = `oneOf([1,2,3])                ${values.oneOf}`
     const str3 = `intRange(0,10)                ${values.intRange}`
     const str4 = `intSequence(0,2)              ${values.intSequence}`
-    const str6 = `char('awesome-sauce')         ${values.char}`
-    const str5 = `weighted([1,2], [1,5])        ${values.weighted}`
+    const str5 = `char('awesome-sauce')         ${values.char}`
+    const str6 = `weighted([1,2], [1,5])        ${values.weighted}`
     return (
         <>
             <Box sx={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px'}}>
@@ -62,10 +61,10 @@ const RandomDemo = () => {
                         {str4}
                     </SyntaxHighlighter>
                     <SyntaxHighlighter language="javascript" style={docco}>
-                        {str6}
+                        {str5}
                     </SyntaxHighlighter>
                     <SyntaxHighlighter language="javascript" style={docco}>
-                        {str5}
+                        {str6}
                     </SyntaxHighlighter>
                 </Box>
                 {!isDesktop && <Button
