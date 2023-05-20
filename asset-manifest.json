@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/aimless-demo/static/css/main.c7c29d5f.css",
-    "main.js": "/aimless-demo/static/js/main.70c1d733.js",
+    "main.js": "/aimless-demo/static/js/main.5a03cb25.js",
     "static/js/787.6c93a889.chunk.js": "/aimless-demo/static/js/787.6c93a889.chunk.js",
     "static/media/roboto-all-500-normal.woff": "/aimless-demo/static/media/roboto-all-500-normal.0ab669b7a0d19b178f57.woff",
     "static/media/roboto-all-700-normal.woff": "/aimless-demo/static/media/roboto-all-700-normal.a457fde362a540fcadff.woff",
@@ -38,11 +38,11 @@
     "static/media/roboto-greek-ext-700-normal.woff2": "/aimless-demo/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "index.html": "/aimless-demo/index.html",
     "main.c7c29d5f.css.map": "/aimless-demo/static/css/main.c7c29d5f.css.map",
-    "main.70c1d733.js.map": "/aimless-demo/static/js/main.70c1d733.js.map",
+    "main.5a03cb25.js.map": "/aimless-demo/static/js/main.5a03cb25.js.map",
     "787.6c93a889.chunk.js.map": "/aimless-demo/static/js/787.6c93a889.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c7c29d5f.css",
-    "static/js/main.70c1d733.js"
+    "static/js/main.5a03cb25.js"
   ]
 }
