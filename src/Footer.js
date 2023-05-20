@@ -34,7 +34,7 @@ const Footer = () => {
                         width: isDesktop ? '250px' : '150px',
                         fontWeight: isDesktop ? 'bold' : 'normal',
                     }}>
-                        MIT. © 2023 Christopher Cavalea
+                        MIT © 2023 Christopher Cavalea
                     </Typography>
                     <Button
                         sx={{

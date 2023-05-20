@@ -24,12 +24,13 @@ const RandomDemo = () => {
     const [values, setValues ] = useState(generateRandom())
     const isDesktop = useContext(DesktopContext)
 
-    const str1 = `bool()                        ${values.bool}`
-    const str2 = `oneOf([1,2,3])                ${values.oneOf}`
-    const str3 = `intRange(0,10)                ${values.intRange}`
-    const str4 = `intSequence(0,2)              ${values.intSequence}`
-    const str5 = `char('awesome-sauce')         ${values.char}`
-    const str6 = `weighted([1,2], [1,5])        ${values.weighted}`
+    const str1 = `bool()                       ${values.bool}`
+    const str2 = `oneOf([1,2,3])               ${values.oneOf}`
+    const str3 = `intRange(0,10)               ${values.intRange}`
+    const str4 = `intSequence(0,2)             ${values.intSequence}`
+    const str5 = `char('awesome-sauce')        ${values.char}`
+    const str6 = `weighted([1,2], [1,5])       ${values.weighted}`
+
     return (
         <>
             <Box sx={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px'}}>

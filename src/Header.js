@@ -13,7 +13,7 @@ const Header = () => {
             alignItems: 'center',
             maxWidth: '800px',
             height: '100px',
-            width: '85%',
+            width: isDesktop ? '85%' : '100%',
             margin: '20px auto 0 auto',
         }}>
             <Box sx={{

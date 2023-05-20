@@ -3,6 +3,7 @@ import { Box, Divider, List, ListItem, ListItemIcon, ListItemText, Typography, u
 import { LinkOff, PsychologyOutlined, ZoomIn } from "@mui/icons-material";
 import { DesktopContext } from "./App";
 import RandomDemo from "./RandomDemo";
+import SpecialGenerators from "./SpecialGenerators";
 
 const Content = () => {
     const isDesktop = useContext(DesktopContext)
@@ -12,7 +13,7 @@ const Content = () => {
         <Box sx={{
             width: '85%',
             maxWidth: '800px',
-            margin: '20px auto 300px auto',
+            margin: `20px auto ${isDesktop ? '0' : '140px'} auto`,
         }}>
             <Box sx={{
                 display: isDesktop ? 'flex' : 'block',
@@ -51,10 +52,12 @@ const Content = () => {
             </Box>
             <Divider sx={{ margin: isDesktop ? '40px 0 40px 0' : '20px 0 28px 0' }} />
             <RandomDemo />
-            <Divider sx={{ margin: isDesktop ? '40px 0 40px 0' : '20px 0 20px 0' }} />
-            <Typography variant="h6" sx={{ fontWeight: 'bold', color: `${theme.palette.primary.main}`, marginBottom: '20px' }}>Special Generators</Typography>
-            <Divider sx={{ margin: isDesktop ? '40px 0 40px 0' : '20px 0 20px 0' }} />
+            <Divider sx={{ margin: isDesktop ? '40px 0 40px 0' : '28px 0 28px 0' }} />
+            <SpecialGenerators />
+            <Divider sx={{ margin: isDesktop ? '40px 0 40px 0' : '28px 0 28px 0' }} />
             <Typography variant="h6" sx={{ fontWeight: 'bold', color: `${theme.palette.primary.main}`, marginBottom: '20px' }}>Distributions</Typography>
+            <Divider sx={{ margin: isDesktop ? '40px 0 40px 0' : '28px 0 28px 0' }} />
+            <Typography variant="h6" sx={{ fontWeight: 'bold', color: `${theme.palette.primary.main}`, marginBottom: '40px' }}>And More!!!</Typography>
         </Box>
     )
 }
