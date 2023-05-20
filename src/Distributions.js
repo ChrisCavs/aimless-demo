@@ -77,7 +77,7 @@ const Distributions = () => {
                     variant="outlined"
                     onClick={() => setValues(generateGraphPoints())}
                 >
-                    Regenerate
+                    Generate Graph
                 </Button>}
             </Box>
         </Box>
