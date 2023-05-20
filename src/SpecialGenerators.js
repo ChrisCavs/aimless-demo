@@ -67,7 +67,7 @@ const SpecialGenerators = () => {
                     </SyntaxHighlighter>
                 </Box>
             </Box>
-            <Typography sx={{ margin: '20px 0', textAlign: 'center' }}>Seed functions are preditably random.</Typography>
+            <Typography sx={{ margin: '20px 0', textAlign: 'center' }}>Seed functions are predictably random.</Typography>
             <Box sx={{
                 display: 'flex',
                 flexDirection: 'column',
